@@ -8,7 +8,7 @@ class UserRegisterForm(UserCreationForm):
     email = forms.EmailField()
 
     class Meta:
-        model = User #form.save()
+        model = User  # form.save()
         fields = ['username', 'email', 'password1', 'password2']
 
 
@@ -16,10 +16,11 @@ class UserUpdateForm(forms.ModelForm):
     email = forms.EmailField()
 
     class Meta:
-        model = User #form.save()
+        model = User  # form.save()
         fields = ['username', 'email']
+
 
 class ProfileUpdateForm(forms.ModelForm):
     class Meta:
-        model = Profile #form.save()
+        model = Profile  # form.save()
         fields = ['image']
